@@ -4,7 +4,7 @@
 <td width="30%" valign="top" align="center">
 
 <!-- Left side: Picture & basic info -->
-![Aizaz Ali Shah](path_to_your_picture.jpg)  
+![Aizaz Ali Shah](dp.png)  
 **Aizaz Ali Shah**  
 Project Manager at Enroute Technologies  
 

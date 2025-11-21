@@ -38,7 +38,8 @@ Project Manager at Enroute Technologies
 - Quality Assurance & Testing  
 - Machine Learning & NLP  
 - Large Language Models (LLMs)  
-- ASR Systems  
+- ASR Systems
+- Business Analysis
 
 </td>
 </tr>

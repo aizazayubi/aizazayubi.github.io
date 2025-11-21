@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aizaz Ali Shah Portfolio</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background: #f7f9fc; color:#333;}
+.container { max-width: 1000px; margin: 40px auto; display: flex; flex-wrap: wrap; background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); overflow:hidden;}
+.left { flex:1 1 250px; text-align:center; background:#2a9d8f; color:#fff; padding:40px 20px;}
+.left img { width:180px; height:180px; border-radius:50%; object-fit:cover; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:20px;}
+.left a { color:#fff; text-decoration:none;}
+.right { flex:2 1 500px; padding:40px 30px;}
+.right h2, .right h3 { color:#264653; margin-top:0;}
+.right ul { padding-left:20px; }
+.skills { display:flex; flex-wrap:wrap; gap:6px;}
+.skill-badge { background:#e9ecef; color:#264653; border-radius:12px; padding:6px 12px; font-size:0.9em;}
+@media(max-width:768px){ .container{ flex-direction:column;} .left, .right{ padding:30px 20px;} }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <img src="assets/dp.jpg" alt="Aizaz Ali Shah">
+    <h2>Aizaz Ali Shah</h2>
+    <p>Project Manager at Enroute Technologies</p>
+    <p>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>🌐 <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/aizaz" target="_blank">LinkedIn</a> | 🐦 <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></p>
+  </div>
+
+  <div class="right">
+    <h3>🎓 Education</h3>
+    <ul>
+      <li>MS in Computer Science – NUST</li>
+      <li>BS in Software Engineering – IM Sciences</li>
+    </ul>
+
+    <h3>💼 Professional Experience</h3>
+    <ul>
+      <li>Project Manager – Enroute Technologies</li>
+      <li>QA Engineer / Test – Funavry Technologies</li>
+      <li>Project Coordinator – Funavry Technologies (Ministry of Housing)</li>
+      <li>QA Test – Torrantal Asia</li>
+      <li>Team Lead – Asian Foundation Awareness SAP (Kitchen Gardening Project)</li>
+      <li>Volunteer – British Council (TACS Project)</li>
+    </ul>
+
+    <h3>🧪 Research & Projects</h3>
+    <ul>
+      <li>ASR for low-resource languages using Wav2Vec & Whisper</li>
+      <li>Resume parser using LLMs</li>
+      <li>LLM-based chatbots</li>
+      <li>Other ML models</li>
+    </ul>
+
+    <h3>💡 Skills</h3>
+    <div class="skills">
+      <span class="skill-badge">Project Management</span>
+      <span class="skill-badge">QA & Testing</span>
+      <span class="skill-badge">Machine Learning</span>
+      <span class="skill-badge">NLP</span>
+      <span class="skill-badge">ASR Systems</span>
+      <span class="skill-badge">LLMs</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
 

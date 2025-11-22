@@ -7,7 +7,16 @@
 <style>
 body { font-family: Arial, sans-serif; margin:0; padding:0; background: #f7f9fc; color:#333;}
 .container { max-width: 1000px; margin: 40px auto; display: flex; flex-wrap: wrap; background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); overflow:hidden;}
-.left { flex:1 1 250px; text-align:center; background:#2a9d8f; color:#fff; padding:40px 20px;}
+
+/* Reduced left width */
+.left { 
+  flex:0.8 1 180px; 
+  text-align:center; 
+  background:#2a9d8f; 
+  color:#fff; 
+  padding:40px 20px;
+}
+
 .left img { 
   width:130px; 
   height:130px; 
@@ -17,13 +26,32 @@ body { font-family: Arial, sans-serif; margin:0; padding:0; background: #f7f9fc;
   box-shadow:0 4px 8px rgba(0,0,0,0.2); 
   margin-bottom:20px;
 }
-.left a { color:#fff; text-decoration:none;}
-.right { flex:2 1 500px; padding:40px 30px;}
-.right h2, .right h3 { color:#264653; margin-top:0;}
+
+.left a { color:#fff; text-decoration:none; }
+
+.right { 
+  flex:3 1 600px; 
+  padding:40px 30px;
+}
+
+.right h2, .right h3 { color:#264653; margin-top:0; }
+
 .right ul { padding-left:20px; }
-.skills { display:flex; flex-wrap:wrap; gap:6px;}
-.skill-badge { background:#e9ecef; color:#264653; border-radius:12px; padding:6px 12px; font-size:0.9em;}
-@media(max-width:768px){ .container{ flex-direction:column;} .left, .right{ padding:30px 20px;} }
+
+.skills { display:flex; flex-wrap:wrap; gap:6px; }
+
+.skill-badge { 
+  background:#e9ecef; 
+  color:#264653; 
+  border-radius:12px; 
+  padding:6px 12px; 
+  font-size:0.9em; 
+}
+
+@media(max-width:768px){
+  .container{ flex-direction:column; }
+  .left, .right{ padding:30px 20px; }
+}
 </style>
 </head>
 <body>

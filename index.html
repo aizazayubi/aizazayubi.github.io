@@ -2,223 +2,154 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aizaz Ali Shah – CV</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Serif+Pro:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Aizaz Ali Shah – Portfolio</title>
 
 <style>
+/* ---- GLOBAL ---- */
 body {
-  background: #f6f6f6;
-  margin: 0;
-  padding: 40px 0;
-  color: #222;
-  font-family: "Source Serif Pro", serif;
+    font-family: "Georgia", "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: #fff;
 }
 
 .container {
-  width: 820px;
-  margin: auto;
-  background: #ffffff;
-  border: 1px solid #d7d7d7;
-  display: flex;
-  letter-spacing: 0.2px;
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* LEFT PANEL */
+/* ---- LEFT PANEL ---- */
 .left {
-  width: 260px;
-  background: #f1f1f1;
-  padding: 45px 30px;
-  border-right: 1px solid #d0d0d0;
+    width: 230px;
+    padding: 40px 25px;
+    border-right: 1px solid #000;
 }
 
 .left img {
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  display: block;
-  margin: 0 auto 20px auto;
-  object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-.left h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.7rem;
-  margin-bottom: 6px;
-  text-align: center;
-  color: #222;
+/* Name & Role */
+.left h1 {
+    font-size: 20px;
+    margin: 10px 0 4px 0;
+    letter-spacing: 0.5px;
 }
 
-.left .role {
-  text-align: center;
-  font-style: italic;
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 14px;
+.left p {
+    font-size: 14px;
+    line-height: 1.45;
+    margin: 6px 0;
 }
 
-.left .location {
-  font-size: 0.95rem;
-  margin-bottom: 10px;
+/* Social */
+.left a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-.left .bio {
-  margin-top: 18px;
-  font-size: 0.93rem;
-  line-height: 1.45rem;
-  color: #333;
-}
-
-/* Section label on left */
-.left .label {
-  margin-top: 25px;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #666;
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 3px;
-  margin-bottom: 8px;
-}
-
-.contact a {
-  color: #333;
-  text-decoration: none;
-  font-size: 0.92rem;
-}
-
-.social-icons a {
-  color: #333;
-  font-size: 1.15rem;
-  margin-right: 10px;
-}
-
-/* RIGHT PANEL */
-.right {
-  flex: 1;
-  padding: 45px 50px;
-}
-
-/* Section Title */
 .section-title {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-  color: #222;
-  border-left: 4px solid #999;
-  padding-left: 10px;
+    margin-top: 22px;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Lists */
-.right ul {
-  margin: 0 0 32px 18px;
-  padding: 0;
+/* ---- RIGHT PANEL ---- */
+.right {
+    flex: 1;
+    padding: 40px 40px;
 }
 
-.right ul li {
-  margin-bottom: 6px;
-  font-size: 0.97rem;
-  line-height: 1.45rem;
+.right h2 {
+    font-size: 18px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
 }
 
-/* Skill tags */
-.skills span {
-  display: inline-block;
-  margin: 4px 8px 4px 0;
-  padding: 5px 12px;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  font-size: 0.85rem;
-  font-family: "Source Serif Pro", serif;
-  background: #fafafa;
+.right p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 14px 0;
 }
 
-/* MOBILE */
-@media(max-width: 860px) {
-  .container { flex-direction: column; width: 92%; }
-  .left { width: 100%; border-right: none; }
+/* For printing cleanly */
+@media print {
+    body { 
+        background: #fff; 
+        color: #000;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
-  <!-- LEFT -->
-  <div class="left">
+    <!-- LEFT SIDE -->
+    <div class="left">
 
-    <img src="dp.png" alt="Aizaz Ali Shah">
+        <img src="dp.png" alt="Aizaz Ali Shah">
 
-    <h2>Aizaz Ali Shah</h2>
-    <p class="role">Project Manager</p>
+        <h1>Aizaz Ali Shah</h1>
+        <p>Project Manager<br>Enroute Technologies</p>
+        <p>📍 Islamabad, Pakistan</p>
 
-    <p class="location">📍 Islamabad, Pakistan</p>
+        <p style="margin-top:15px;">
+            ML, NLP and problem-solving enthusiast with a focus on
+            operational simplicity and efficient systems.
+        </p>
 
-    <p class="bio">
-      Focused on delivering clean, practical solutions in ML, NLP, and product development.
-      Experienced in managing complex systems and driving technical execution.
-    </p>
+        <p>📧 <a href="mailto:aizazayubi@gmail.com">aizazayubi@gmail.com</a></p>
 
-    <div class="label">Contact</div>
-    <div class="contact">
-      <p>Email:</p>
-      <a href="mailto:aizazayubi@gmail.com">aizazayubi@gmail.com</a>
+        <div class="section-title">Profiles</div>
+        <p><a href="https://linkedin.com/in/aizazayubi" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/aizazayubi" target="_blank">GitHub</a></p>
+
     </div>
 
-    <div class="label">Social</div>
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/aizazayubi" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/aizazayubi" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <h2>About</h2>
+        <p>
+            I design and manage systems that balance efficiency, clarity, and user experience.
+            My work spans product development, NLP, ML, and technical project coordination.
+        </p>
+
+        <h2>Experience</h2>
+        <p>
+            <strong>Project Manager – Enroute Technologies</strong><br>
+            Leading development, support, and improvements across multiple products.
+        </p>
+
+        <h2>Skills</h2>
+        <p>
+            Machine Learning · NLP · Product Coordination · Client Handling  
+            Business Logic Design · System Flow Planning · QA & UAT
+        </p>
+
+        <h2>Education</h2>
+        <p>
+            MPhil — Urdu Literature<br>
+            Data Science Graduate
+        </p>
+
     </div>
-
-  </div>
-
-  <!-- RIGHT -->
-  <div class="right">
-
-    <div class="section-title">Professional Experience</div>
-    <ul>
-      <li>Project Manager — Enroute Technologies (2023–Present)</li>
-      <li>QA Engineer — Funavry Technologies (2022–2023)</li>
-      <li>Project Coordinator — Funavry / Ministry of Housing (2022–2023)</li>
-      <li>QA Test — Torrantal Asia (2021–2022)</li>
-      <li>Team Lead — Asian Foundation SAP</li>
-      <li>Volunteer — British Council (TACS Project)</li>
-    </ul>
-
-    <div class="section-title">Research & Projects</div>
-    <ul>
-      <li>ASR for low-resource languages (Wav2Vec & Whisper)</li>
-      <li>Resume parsing using LLMs</li>
-      <li>LLM chatbots and automations</li>
-      <li>Applied ML systems</li>
-    </ul>
-
-    <div class="section-title">Skills</div>
-    <div class="skills">
-      <span>Project Management</span>
-      <span>QA & Testing</span>
-      <span>Machine Learning</span>
-      <span>NLP</span>
-      <span>ASR Systems</span>
-      <span>LLMs</span>
-    </div>
-
-    <div class="section-title">Education</div>
-    <ul>
-      <li>MS Computer Science — NUST Islamabad</li>
-      <li>BS Software Engineering — IM Sciences Peshawar</li>
-    </ul>
-
-  </div>
 
 </div>
 

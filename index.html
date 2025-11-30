@@ -17,7 +17,7 @@ body {
 }
 
 .cv-container {
-  width: 780px;
+  width: 820px;
   margin: auto;
   background: #ddd;
   border-radius: 14px;
@@ -27,7 +27,7 @@ body {
 }
 
 .left {
-  width: 230px;
+  width: 250px;
   background: #979595;
   padding: 40px 22px;
   border-right: 1px solid #555;
@@ -55,21 +55,10 @@ body {
   color: #fff;
 }
 
-.left .role,
-.left .location,
-.left .email,
-.left .bio {
-  font-size: 0.86rem;
+.left .info-line {
+  font-size: 0.82rem;
   margin: 6px 0;
-  line-height: 1.32rem;
-  color: #f3f3f3;
-  text-align: left;
-}
-
-.left .bio {
-  margin-top: 14px;
-  font-style: italic;
-  font-size: 0.80rem;
+  line-height: 1.3rem;
 }
 
 .social-icons {
@@ -95,18 +84,10 @@ body {
   color: #222;
 }
 
-.objective {
-  font-style: italic;
-  font-size: 0.85rem;
-  margin-bottom: 22px;
-  line-height: 1.4rem;
-  color: #333;
-}
-
 .section-title {
   font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   color: #2b2b2b;
   border-left: 4px solid #666;
   padding-left: 10px;
@@ -118,15 +99,15 @@ body {
 }
 
 .right ul li {
-  margin-bottom: 6px;
-  line-height: 1.4rem;
+  margin-bottom: 8px;
+  line-height: 1.45rem;
   color: #333;
 }
 
-.small-text { font-size: 0.78rem; opacity: 0.85; }
 .bold-title { font-weight: bold; font-size: 0.93rem; }
+.small-text { font-size: 0.78rem; opacity: 0.85; }
 
-.skills {
+.skills, .tools {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -142,20 +123,18 @@ body {
 }
 
 @media print {
-  body { background: #ffffff; color: #000; padding: 0; }
+  body { background: #ffffff; padding: 0; }
   .cv-container { width: 100%; box-shadow: none; border-radius: 0; }
-  .left { background: #f5f5f5; color: #000; border-color: #ccc; }
+  .left { background: #f5f5f5; color: #000; }
   .right { background: #ffffff; color: #000; }
   .skill-badge { background: #e0e0e0; color: #000; }
   a { color: #000 !important; }
 }
 
-@media(max-width: 820px) {
+@media(max-width: 860px) {
   .cv-container { flex-direction: column; width: 92%; }
   .left {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #444;
+    width: 100%; border-right: none; border-bottom: 1px solid #444;
     text-align: center;
   }
 }
@@ -163,65 +142,136 @@ body {
 </head>
 
 <body>
+
 <div class="cv-container">
 
+  <!-- LEFT PANEL -->
   <div class="left">
     <img src="dp.png" alt="Aizaz Ali Shah">
+
     <h2>Aizaz Ali Shah</h2>
 
-    <p class="role">Project Manager, Enroute Technologies</p>
-    <p class="location">📍 Islamabad, Pakistan</p>
+    <p class="info-line"><b>DOB:</b> 30/03/1997</p>
+    <p class="info-line"><b>Nationality:</b> Pakistani</p>
+    <p class="info-line"><b>Phone:</b> +92 344 5947477</p>
+    <p class="info-line"><b>Email:</b> aizazayubi@gmail.com</p>
+    <p class="info-line"><b>WhatsApp:</b> +92 344 5947477</p>
 
-    <p class="bio">Passionate about building smart systems and improving operational flows. Merging ML, NLP, and leadership to deliver meaningful impact.</p>
-
-    <p class="email">📧 aizazayubi@gmail.com</p>
+    <p class="info-line">
+      <b>Address:</b><br>
+      Islamabad, Pakistan
+    </p>
 
     <div class="social-icons">
       <a href="https://linkedin.com/in/aizazayubi" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/aizazayubi" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://wa.me/923445947477" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
 
+  <!-- RIGHT PANEL -->
   <div class="right">
 
-    <p class="objective">Focused on delivering structured, scalable systems and leading cross-functional teams with a blend of engineering insight and managerial clarity.</p>
+    <div class="section-title">ABOUT ME</div>
+    <p>
+      Highly skilled professional with a BS in Software Engineering and MS in Data Science.
+      Working as a Quality Assurance Engineer since 2020 with strong experience in automation,
+      manual testing, project management, and data science tasks.
+      Demonstrated ability to handle pressure and deliver results. Experienced in working with
+      international clients and seeking a challenging environment to leverage my diverse skill set.
+    </p>
 
-    <div class="section-title">🎓 Education</div>
+    <!-- EXPERIENCE -->
+    <div class="section-title">WORK EXPERIENCE</div>
+
     <ul>
-      <li><span class="bold-title">MS Computer Science</span> – <span class="small-text">NUST Islamabad</span></li>
-      <li><span class="bold-title">BS Software Engineering</span> – <span class="small-text">IM Sciences Peshawar</span></li>
+      <li>
+        <span class="bold-title">Project Manager</span> – <span class="small-text">Enroute Technologies | 03/06/2024 – Present | Islamabad</span>
+        <ul>
+          <li>Led requirement gathering, defined scope, wrote SRS, user stories & acceptance criteria.</li>
+          <li>Created and maintained product backlog; planned Agile ceremonies.</li>
+          <li>Coordinated Dev, QA, and Design teams; removed blockers and maintained timelines.</li>
+          <li>Oversaw QA planning, execution, API testing, defect triage, and release readiness.</li>
+          <li>Planned deployments, coordinated UAT, handled client feedback & release rollout.</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="bold-title">SQA Engineer</span> – <span class="small-text">Enroute Technologies | 23/11/2023 – Present</span>
+        <ul>
+          <li>Executed test cases for API, functional, regression, and UAT cycles.</li>
+          <li>Mentored QA team and ensured process adherence.</li>
+          <li>Prepared OLA and operational documentation; supported hot fixes via Zoho.</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="bold-title">QA Engineer</span> – <span class="small-text">Funavry Technologies | 06/06/2022 – 15/11/2023</span>
+        <ul>
+          <li>Tested mobile/web apps; created SRS, documentation, user manuals.</li>
+          <li>Gathered requirements, verified mockups, coordinated with Dev/Design teams.</li>
+          <li>Managed a full government project; conducted training & weekly reviews.</li>
+          <li>Worked with AI team on data scraping, prompt engineering, and LLM tasks.</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="bold-title">QA Tester</span> – <span class="small-text">Torrantal Asia | 01/06/2021 – 23/08/2022 | Singapore</span>
+        <ul>
+          <li>Performed software testing, prepared test cases, and tracked bugs in Jira.</li>
+          <li>Collaborated with developers, management, and clients.</li>
+        </ul>
+      </li>
     </ul>
 
-    <div class="section-title">💼 Professional Experience</div>
+    <!-- EDUCATION -->
+    <div class="section-title">EDUCATION</div>
     <ul>
-      <li><span class="bold-title">Project Manager</span> – <span class="small-text">Enroute Technologies (Nov 2023 – Present)</span></li>
-      <li><span class="bold-title">QA Engineer</span> – <span class="small-text">Funavry Technologies (Jun 2022 – Oct 2023)</span></li>
-      <li><span class="bold-title">Project Coordinator</span> – <span class="small-text">Funavry / Ministry of Housing (Jun 2022 – Nov 2023)</span></li>
-      <li><span class="bold-title">QA Test</span> – <span class="small-text">Torrantal Asia (Sep 2021 – May 2022)</span></li>
-      <li><span class="bold-title">Team Lead</span> – <span class="small-text">Asian Foundation SAP</span></li>
-      <li><span class="bold-title">Volunteer</span> – <span class="small-text">British Council (TACS Project)</span></li>
+      <li><span class="bold-title">MS Computer Science</span> – <span class="small-text">NUST | 2021 – Current</span></li>
+      <li><span class="bold-title">BS Software Engineering</span> – <span class="small-text">IM Sciences Peshawar | 2016–2020</span></li>
     </ul>
 
-    <div class="section-title">🧪 Research & Projects</div>
+    <!-- LANGUAGES -->
+    <div class="section-title">LANGUAGE SKILLS</div>
     <ul>
-      <li>ASR for low-resource languages (Wav2Vec, Whisper)</li>
-      <li>Resume parser using LLMs</li>
-      <li>LLM-based chatbots</li>
-      <li>ML automation projects</li>
+      <li><b>Khowar:</b> Native</li>
+      <li><b>Urdu:</b> C2 (Listening, Reading, Speaking, Writing)</li>
+      <li><b>English:</b> B2 (Speaking), C2 (Listening, Reading, Writing)</li>
     </ul>
 
-    <div class="section-title">💡 Skills</div>
+    <!-- SKILLS -->
+    <div class="section-title">SKILLS</div>
     <div class="skills">
-      <span class="skill-badge">Project Management</span>
-      <span class="skill-badge">Quality Assurance</span>
-      <span class="skill-badge">Machine Learning</span>
       <span class="skill-badge">NLP</span>
-      <span class="skill-badge">ASR Systems</span>
-      <span class="skill-badge">LLMs</span>
+      <span class="skill-badge">Machine Learning</span>
+      <span class="skill-badge">LLM</span>
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">API Testing</span>
+      <span class="skill-badge">Automation Testing</span>
+      <span class="skill-badge">Regression Testing</span>
+      <span class="skill-badge">UAT Coordination</span>
+      <span class="skill-badge">Test Case Design</span>
+      <span class="skill-badge">QA Leadership</span>
+      <span class="skill-badge">Requirement Analysis</span>
+      <span class="skill-badge">Sprint Planning</span>
+      <span class="skill-badge">Release Management</span>
+      <span class="skill-badge">Cross-functional Coordination</span>
+      <span class="skill-badge">Risk Management</span>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section-title">TOOLS</div>
+    <div class="tools">
+      <span class="skill-badge">Jira</span>
+      <span class="skill-badge">Postman</span>
+      <span class="skill-badge">Nifty</span>
+      <span class="skill-badge">Zoho CRM</span>
+      <span class="skill-badge">Selenium</span>
+      <span class="skill-badge">JMeter</span>
     </div>
 
   </div>
 
 </div>
+
 </body>
 </html>

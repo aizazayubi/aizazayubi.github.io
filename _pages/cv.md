@@ -11,35 +11,46 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Computer Science, NUST Islamabad, 2025
+* B.S. in Software Engineering, IM Sciences Peshawar, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Feb 2024 - Present: Researcher
+  * MCS NUST Islamabad
+  * Duties includes: Research and Development on Low Resource Languages
+  * Supervisor: Dr Shibli Nisar
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Dec 2023 - Present: Project Manager
+  * Enroute Technologies Islamabad
+  * Duties included: Project Management and Quality Assurance
+  * Managing Director: Irtaza Hassan
+ 
+* Jun 2022 - Nov 2023: QA Engineer (AI Centric) 
+  * Funavry Technologies Islamabad
+  * Duties included: Quality Assurance, Prompt Engineering, Data Scraping
+  * CEO : Dr Adnan Tariq 
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Project Management
+  * Agile Methodologies
+  * Technical Documentation 
+* Quality Assurance
+  * Manual
+  * Automation
+* Programming and Tools
+  * Python, Java, C++
+  * n8n, Langchain, ChromaDB
+  * Playright, Selenium, 
+* Machine Learning & AI
+  * Natural Language Processing (NLP)
+  * Automatic Speech Recognition (ASR)
+  * Large Language Models (LLMs)
+  * Transfer Learning, Hate Speech Detection
+  * Speech + LLM Integration
+  * Data Preprocessing & Feature Engineering
+* Research and Development 
 
 Publications
 ======

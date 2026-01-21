@@ -5,9 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
-
-
-{% for post in site.publication %}
-  {% include archive-single.html %}
+{% for page in site.pages %}
+  {% if page.path contains 'publications/' %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
+
